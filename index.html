@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Airline Management System</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background-color: ghostwhite">
+    <div style="background-color: black"><center><font color="white" size="80px">Airline Management System</font></center></div><br><br>
+    <h1> INSERT DETAILS:</h1>
+    <input type="radio" id="id1" name="name" value="Airplane">Airplane&nbsp;&nbsp;
+    <input type="radio" id="id2" name="name" value="Route">Route&nbsp;&nbsp;
+    <input type="radio" id="id3" name="name" value="Passenger">Passenger&nbsp;&nbsp;
+    <input type="radio" id="id4" name="name" value="Receptionist">Receptionist&nbsp;&nbsp;
+    <input type="radio" id="id5" name="name" value="Booking">Booking&nbsp;&nbsp;
+    <input type="radio" id="id6" name="name" value="Pilot">Pilot&nbsp;&nbsp;
+    <input type="radio" id="id7" name="name" value="Food_Supply">Food_Supply&nbsp;&nbsp;
+    <input type="radio" id="id8" name="name" value="City">City&nbsp;&nbsp;
+    <input type="radio" id="id9" name="name" value="Flight_Attendant">Flight_Attendant&nbsp;&nbsp;
+    <input type="radio" id="id10" name="name" value="Flight_School">Flight_School&nbsp;&nbsp;
+    <input type="radio" id="id11" name="name" value="Driven_By">Driven_By&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="submit" onclick="insert()">Submit</button>
+    
+    <br><br>
+    <h1> DELETE DETAILS:</h1>
+    <input type="radio" id="id1a" name="name" value="Airplane">Airplane&nbsp;&nbsp;
+    <input type="radio" id="id2a" name="name" value="Route">Route&nbsp;&nbsp;
+    <input type="radio" id="id3a" name="name" value="Passenger">Passenger&nbsp;&nbsp;
+    <input type="radio" id="id4a" name="name" value="Receptionist">Receptionist&nbsp;&nbsp;
+    <input type="radio" id="id5a" name="name" value="Booking">Booking&nbsp;&nbsp;
+    <input type="radio" id="id6a" name="name" value="Pilot">Pilot&nbsp;&nbsp;
+    <input type="radio" id="id7a" name="name" value="Food_Supply">Food_Supply&nbsp;&nbsp;
+    <input type="radio" id="id8a" name="name" value="City">City&nbsp;&nbsp;
+    <input type="radio" id="id9a" name="name" value="Flight_Attendant">Flight_Attendant&nbsp;&nbsp;
+    <input type="radio" id="id10a" name="name" value="Flight_School">Flight_School&nbsp;&nbsp;
+    <input type="radio" id="id11a" name="name" value="Driven_By">Driven_By&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="submit" onclick="deletee()">Submit</button>
+    
+    <br><br>
+    <h1> UPDATE DETAILS:</h1>
+    <input type="radio" id="id1b" name="name" value="Airplane">Airplane&nbsp;&nbsp;
+    <input type="radio" id="id2b" name="name" value="Route">Route&nbsp;&nbsp;
+    <input type="radio" id="id3b" name="name" value="Passenger">Passenger&nbsp;&nbsp;
+    <input type="radio" id="id4b" name="name" value="Receptionist">Receptionist&nbsp;&nbsp;
+    <input type="radio" id="id5b" name="name" value="Booking">Booking&nbsp;&nbsp;
+    <input type="radio" id="id6b" name="name" value="Pilot">Pilot&nbsp;&nbsp;
+    <input type="radio" id="id7b" name="name" value="Food_Supply">Food_Supply&nbsp;&nbsp;
+    <input type="radio" id="id8b" name="name" value="City">City&nbsp;&nbsp;
+    <input type="radio" id="id9b" name="name" value="Flight_Attendant">Flight_Attendant&nbsp;&nbsp;
+    <input type="radio" id="id10b" name="name" value="Flight_School">Flight_School&nbsp;&nbsp;
+    <input type="radio" id="id11b" name="name" value="Driven_By">Driven_By&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="submit" onclick="update()">Submit</button>
+    
+        <br><br>
+    <h1> SHOW DETAILS:</h1>
+    <input type="radio" id="id1c" name="name" value="Airplane">Airplane&nbsp;&nbsp;
+    <input type="radio" id="id2c" name="name" value="Route">Route&nbsp;&nbsp;
+    <input type="radio" id="id3c" name="name" value="Passenger">Passenger&nbsp;&nbsp;
+    <input type="radio" id="id4c" name="name" value="Receptionist">Receptionist&nbsp;&nbsp;
+    <input type="radio" id="id5c" name="name" value="Booking">Booking&nbsp;&nbsp;
+    <input type="radio" id="id6c" name="name" value="Pilot">Pilot&nbsp;&nbsp;
+    <input type="radio" id="id7c" name="name" value="Food_Supply">Food_Supply&nbsp;&nbsp;
+    <input type="radio" id="id8c" name="name" value="City">City&nbsp;&nbsp;
+    <input type="radio" id="id9c" name="name" value="Flight_Attendant">Flight_Attendant&nbsp;&nbsp;
+    <input type="radio" id="id10c" name="name" value="Flight_School">Flight_School&nbsp;&nbsp;
+    <input type="radio" id="id11c" name="name" value="Driven_By">Driven_By&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="id12c" name="name" value="Cancel_Hist">Cancel_Hist&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="submit" onclick="show()">Submit</button>
+    
+    <form method="post" action="airplaneshow" id="airplaneshow"></form>
+    <form method="post" action="routeshow" id="routeshow"></form>
+    <form method="post" action="passengershow" id="passengershow"></form>
+    <form method="post" action="receptionistshow" id="receptionistshow"></form>
+    <form method="post" action="bookingshow" id="bookingshow"></form>
+    <form method="post" action="pilotshow" id="pilotshow"></form>
+    <form method="post" action="foodsupplyshow" id="foodsupplyshow"></form>
+    <form method="post" action="cityshow" id="cityshow"></form>
+    <form method="post" action="flightattendantshow" id="flightattendantshow"></form>
+    <form method="post" action="flightschoolshow" id="flightschoolshow"></form>
+    <form method="post" action="drivenbyshow" id="drivenbyshow"></form>
+    <form method="post" action="cancelhistshow" id="cancelhistshow"></form>
+    
+    <BR><BR>
+    <form method="post" action="query1" id="query1">
+    <h3> Date of Establishment Of Flight Schools from where any pilot of Age greater than 30 exists:</h3>
+    <input type="submit" value="Submit"><br><br></form>
+    
+    <form method="post" action="queryy2" id="queryy2">
+    <h3> Attendant ID of Flight Attendants who will board/boarded an airplane with airplane ID 'A321-211' in the month of November:</h3>
+    <input type="submit" value="Submit"><br><br></form>
+    
+    <form method="post" action="query3" id="query3">
+    <h3>Average of all economy class charges of airline numbers ending with 'N':</h3>
+    <input type="submit" value="Submit"><br><br></form>
+    
+    <form method="post" action="query4" id="query4">
+    <h3>All food companies that offer food in flights traveling to any city in china:</h3>
+    <input type="submit" value="Submit"><br><br></form>
+    
+    <form method="post" action="query5" id="query5">
+    <h3>Name of Male passengers who booked seat no. of pattern '11_' and have a reserved seat:</h3>
+    <input type="submit" value="Submit"><br><br></form>
+    
+    <form method="post" action="query6" id="query6">
+    <h3>Number of Pilot who have been alloted together from different Schools:</h3>
+    <input type="submit" value="Submit"><br><br></form>
+    
+    <form method="post" action="query7" id="query7">
+    <h3>All people who travelled in 2021 but after April:</h3>
+    <input type="submit" value="Submit"><br><br></form>
+    
+    <form method="post" action="query8" id="query8">
+    <h3>Details of Receptionist who booked tickets for flights with duration lesser than 3 hours.:</h3>
+    <input type="submit" value="Submit"><br><br></form>
+    
+    <form method="post" action="query9" id="query9">
+    <h3>Passengers that will travel in airlines that hire pilots with their date of qualification being 2010 or afterwards:</h3>
+    <input type="submit" value="Submit"><br><br></form>
+    
+    <form method="post" action="func" id="func">
+    <h3>Average of Ticket Bussiness Fares Using Function:</h3>
+    <input type="submit" value="Submit"><br><br></form>
+    
+    <form method="get" action="proc" id="proc">
+    <h3>Change of cancelled status to RESERVED Using Procedure:</h3>
+    Status: <input type="text" name="status_change">
+    <input type="submit" value="Submit"><br><br></form>
+    
+<center><form method="get" action="airplaneinsert" id="airplaneinsert"><br><br><br>
+    <h1>Airplane Insertion Table</h1>
+    Airplane_ID:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="aairplane_id"><br><br>
+    Airline_Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="aairline_name"><br><br>
+    From_Location: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="afrom_location"><br><br>
+    Departure_Date: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="adeparture_date"><br><br>
+    Total_Distance: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" step="0.1" name="atotal_distance"><br><br>
+    Airline_No.: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="aairline_no"><br><br>
+    To_Location: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="ato_location"><br><br>
+    Route_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="aroute_id"><br><br>
+    City_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="acity_id"><br><br>
+    Licience_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="alicience_id"><br><br>
+    <input type="submit" value="Insert Details"><br><br></form></center>
+    
+    <center><form method="post" action="airplanedelete" id="airplanedelete"><br><br><br>
+    <h1>Airplane Deletion Table</h1>
+    Airplane_ID:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="aairplane_id"><br><br>
+    <input type="submit" value="Delete Details"><br><br></form></center>
+
+    <center><form method="post" action="airplaneupdate" id="airplaneupdate"><br><br><br>
+    <h1>Airplane Updation Table</h1>
+    Airplane_ID:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="aairplane_id"><br><br>
+    Airline_Name(update):&nbsp;&nbsp; <input type="text" name="aairline_name"><br><br>
+    <input type="submit" value="Update Details"><br><br></form></center>
+
+    
+
+
+<center> <form method="post" action="routeinsert" id="routeinsert"><br><br><br>
+    <h1>Route Insertion Table</h1>
+    Route_ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="rroute_id"><br><br>
+    Duration: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" name="rduration"><br><br>
+    Airline_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="rairline_id"><br><br>
+    Departure_Location: &nbsp;&nbsp; <input type="text" name="rdepart_locn"><br><br>
+    Arrival_Location: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="rarrival_locn"><br><br>
+    Eco_Fare: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" step="0.1" name="reco_fare"><br><br>
+    Bussiness_Fare: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" step="0.1" name="rbussiness_fare"><br><br>
+    City_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="rcity_id"><br><br>
+    <input type="submit" value="Insert Details"><br><br></form></center>
+
+<center> <form method="post" action="routedelete" id="routedelete"><br><br><br>
+    <h1>Route Deletion Table</h1>
+    Route_ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="rroute_id"><br><br>
+    <input type="submit" value="Delete Details"><br><br></form></center>
+
+    <center> <form method="post" action="routeupdate" id="routeupdate"><br><br><br>
+    <h1>Route Updation Table</h1>
+    Route_ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="rroute_id"><br><br>
+    Departure_Location(update): &nbsp; <input type="text" name="rdepart_locn"><br><br>
+    <input type="submit" value="Update Details"><br><br></form></center>
+
+
+<center> <form method="post" action="passengerinsert" id="passengerinsert"><br><br><br>
+    <h1>Passenger Insertion Table</h1>
+    Passenger_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="ppassenger_id"><br><br>
+    Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="pname"><br><br>
+    Seat_Number: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="pseat_number"><br><br>
+    Type: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="ptype"><br><br>
+    Gender: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="pgender"><br><br>
+    Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" step="0.1" name="page"><br><br>
+    U_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="puid"><br><br>
+    Airplane_ID:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="pairplane_id"><br><br>
+    Iata_Code: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="piata_code"><br><br>
+    <input type="submit" value="Insert Details"><br><br></form></center>
+
+
+    <center> <form method="post" action="passengerdelete" id="passengerdelete"><br><br><br>
+    <h1>Passenger Deletion Table</h1>
+    Passenger_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="ppassenger_id"><br><br>
+    <input type="submit" value="Delete Details"><br><br></form></center>
+    
+    <center> <form method="post" action="passengerupdate" id="passengerupdate"><br><br><br>
+    <h1>Passenger Updation Table</h1>
+    Passenger_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="ppassenger_id"><br><br>
+    Name (update):&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="pname"><br><br>
+    <input type="submit" value="Update Details"><br><br></form></center>
+
+<center> <form method="post" action="receptionistinsert" id="receptionistinsert"><br><br><br>
+    <h1>Receptionist Insertion Table</h1>
+    U_ID: &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="reuid"><br><br>
+    Name:&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="rename"><br><br>
+    Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" step="0.1" name="reage"><br><br>
+    <input type="submit" value="Insert Details"><br><br></form></center>
+    
+    <center> <form method="post" action="receptionistdelete" id="receptionistdelete"><br><br><br>
+    <h1>Receptionist Deletion Table</h1>
+    U_ID: &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="reuid"><br><br>
+    <input type="submit" value="Delete Details"><br><br></form></center>
+
+    <center> <form method="post" action="receptionistupdate" id="receptionistupdate"><br><br><br>
+    <h1>Receptionist Updation Table</h1>
+    U_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="reuid"><br><br>
+    Name (update):&nbsp;&nbsp; <input type="text" name="rename"><br><br>
+    <input type="submit" value="Update Details"><br><br></form></center>
+
+
+<center> <form method="post" action="bookinginsert" id="bookinginsert"><br><br><br>
+    <h1>Booking Insertion Table</h1>
+    Iata_Code: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="biata_code"><br><br>
+    Total_Fare:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" step="0.1" name="btot_fare"><br><br>
+    Date: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="date" name="bdate"><br><br>
+    Status: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="bstatus"><br><br>
+    U_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="buid"><br><br>
+    Airplane_ID:  &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="bairplane_id"><br><br>
+    Passenger_ID: &nbsp;&nbsp;<input type="text" name="bpassenger_id"><br><br>
+    <input type="submit" value="Insert Details"><br><br></form></center>
+
+    <center> <form method="post" action="bookingdelete" id="bookingdelete"><br><br><br>
+    <h1>Booking Deletion Table</h1>
+    Iata_Code: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="biata_code"><br><br>
+    <input type="submit" value="Delete Details"><br><br></form></center>
+
+    <center> <form method="post" action="bookingupdate" id="bookingupdate"><br><br><br>
+    <h1>Booking Updation Table</h1>
+    Iata_Code: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="biata_code"><br><br>
+    Status (update): &nbsp; <input type="text" name="bstatus"><br><br>
+    <input type="submit" value="Update Details"><br><br></form></center>
+
+    
+<center> <form method="get" action="pilotinsert" id="pilotinsert"><br><br><br>
+    <h1>Pilot Insertion Table</h1>
+    Pilot_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="pipi_id"><br><br>
+    Airline_Allocated:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="piairline_allocated"><br><br>
+    Pilot_Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="pipi_name"><br><br>
+    Pilot_Gender: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="pipi_gender"><br><br>
+    Date_Of_Qualification: &nbsp;&nbsp; <input type="text" name="pidate_of_qualification"><br><br>
+    Pilot_Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" step="0.1" name="pipi_age"><br><br>
+    Flight_School_Name: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="pisc_name"><br><br>
+    <input type="submit" value="Insert Details"><br><br></form></center>
+
+    <center> <form method="post" action="pilotdelete" id="pilotdelete"><br><br><br>
+    <h1>Pilot Deletion Table</h1>
+    Pilot_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="pipi_id"><br><br>
+    <input type="submit" value="Delete Details"><br><br></form></center>
+
+    <center> <form method="post" action="pilotupdate" id="pilotupdate"><br><br><br>
+    <h1>Pilot Updation Table</h1>
+    Pilot_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="pipi_id"><br><br>
+    Pilot_Name (update): &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="pipi_name"><br><br>
+    <input type="submit" value="Update Details"><br><br></form></center>
+
+  
+<center><form method="post" action="foodsupplyinsert" id="foodsupplyinsert"><br><br><br>
+    <h1>Food Supply Insertion Table</h1>
+    Licience_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="flicience_id"><br><br>
+    Name_Company: &nbsp; <input type="text" name="fname_comp"><br><br>
+    <input type="submit" value="Insert Details"><br><br></form> </center> 
+
+    <center><form method="post" action="foodsupplydelete" id="foodsupplydelete"><br><br><br>
+    <h1>Food Supply Deletion Table</h1>
+    Licience_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="flicience_id"><br><br>
+    <input type="submit" value="Delete Details"><br><br></form> </center>
+
+    <center><form method="get" action="foodsupplyupdate" id="foodsupplyupdate"><br><br><br>
+    <h1>Food Supply Updation Table</h1>
+    Licience_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="flicience_id"><br><br>
+    Name_Company (update): &nbsp; <input type="text" name="fname_comp"><br><br>
+    <input type="submit" value="Update Details"><br><br></form> </center>
+
+    
+<center>  <form method="post" action="cityinsert" id="cityinsert"><br><br><br>
+    <h1>City Insertion Table</h1>
+    City_ID: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="ccity_id"><br><br>
+    State: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="cstate"><br><br>
+    Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="cname"><br><br>
+    Country: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="ccountry"><br><br>
+    <input type="submit" value="Insert Details"><br><br></form></center>
+
+    <center>  <form method="post" action="citydelete" id="citydelete"><br><br><br>
+    <h1>City Deletion Table</h1>
+    City_ID: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="ccity_id"><br><br>
+    <input type="submit" value="Delete Details"><br><br></form></center>
+
+    <center>  <form method="post" action="cityupdate" id="cityupdate"><br><br><br>
+    <h1>City Updation Table</h1>
+    City_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="ccity_id"><br><br>
+    Name (update): &nbsp; <input type="text" name="cname"><br><br>
+    <input type="submit" value="Update Details"><br><br></form></center>
+
+  
+<center> <form method="post" action="flightattendantinsert" id="flightattendantinsert"><br><br><br>
+    <h1>Flight Attendant Insertion Table</h1>
+    Attendant_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="faatten_id"><br><br>
+    Attendant_Name: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="faatten_name"><br><br>
+    Attendant_Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" step="0.1" name="faatten_age"><br><br>
+    Attendant_Gender: &nbsp;&nbsp; <input type="text" name="faatten_gender"><br><br>
+    Name_Duty: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="faname_duty"><br><br>
+    Airplane_ID:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="faairplane_id"><br><br>
+    <input type="submit" value="Insert Details"><br><br></form> </center>
+
+    <center> <form method="post" action="flightattendantdelete" id="flightattendantdelete"><br><br><br>
+    <h1>Flight Attendant Deletion Table</h1>
+    Attendant_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="faatten_id"><br><br>
+    <input type="submit" value="Delete Details"><br><br></form> </center>
+
+    <center> <form method="post" action="flightattendantupdate" id="flightattendantupdate"><br><br><br>
+    <h1>Flight Attendant Updation Table</h1>
+    Attendant_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="faatten_id"><br><br>
+    Attendant_Name (update): &nbsp; <input type="text" name="faatten_name"><br><br>
+    <input type="submit" value="Update Details"><br><br></form> </center>
+
+ 
+<center> <form method="post" action="flightschoolinsert" id="flightschoolinsert"><br><br><br>
+    <h1>Flight School Insertion Table</h1>
+    School_Name: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="fssc_name"><br><br>
+    Date_Establish: &nbsp;&nbsp;&nbsp; <input type="date" name="fsdate_establish"><br><br>
+    Qualified_No.: &nbsp;&nbsp;&nbsp;&nbsp; <input type="number" step="1" name="fsqualified_no"><br><br>
+    <input type="submit" value="Insert Details"><br><br></form> </center>
+
+    <center> <form method="post" action="flightschooldelete" id="flightschooldelete"><br><br><br>
+    <h1>Flight School Deletion Table</h1>
+    School_Name: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="fssc_name"><br><br>
+    <input type="submit" value="Delete Details"><br><br></form> </center>
+
+    <center> <form method="post" action="flightschoolupdate" id="flightschoolupdate"><br><br><br>
+    <h1>Flight School Updation Table</h1>
+    School_Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="fssc_name"><br><br>
+    Qualified_No. (update): &nbsp; <input type="number" step="1" name="fsqualified_no"><br><br>
+    <input type="submit" value="Update Details"><br><br></form> </center>
+
+
+<center> <form method="post" action="drivenbyinsert" id="drivenbyinsert"><br><br><br>
+    <h1>Driven By Insertion Table</h1>
+    Airplane_ID: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="dairplane_id"><br><br>
+    Pilot_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="dpi_id"><br><br>
+    <input type="submit" value="Insert Details"><br><br></form> </center>
+
+    <center> <form method="post" action="drivenbydelete" id="drivenbydelete"><br><br><br>
+    <h1>Driven By Deletion Table</h1>
+    Airplane_ID: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="dairplane_id"><br><br>
+    <input type="submit" value="Delete Details"><br><br></form> </center>
+
+    <center> <form method="post" action="drivenbyupdate" id="drivenbyupdate"><br><br><br>
+    <h1>Driven By Updation Table</h1>
+    Airplane_ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="dairplane_id"><br><br>
+    Pilot_ID (update): &nbsp;&nbsp; <input type="text" name="dpi_id"><br><br>
+    <input type="submit" value="Update Details"><br><br></form> </center>
+    
+    <script>
+        var a=document.getElementById("airplaneinsert");
+        a.style.display="none";
+        var b=document.getElementById("routeinsert");
+        b.style.display="none";
+        var c=document.getElementById("passengerinsert");
+        c.style.display="none";
+        var d=document.getElementById("receptionistinsert");
+        d.style.display="none";
+        var e=document.getElementById("bookinginsert");
+        e.style.display="none";
+        var f=document.getElementById("pilotinsert");
+        f.style.display="none";
+        var g=document.getElementById("foodsupplyinsert");
+        g.style.display="none";
+        var h=document.getElementById("cityinsert");
+        h.style.display="none";
+        var i=document.getElementById("flightattendantinsert");
+        i.style.display="none";
+        var j=document.getElementById("flightschoolinsert");
+        j.style.display="none";
+        var k=document.getElementById("drivenbyinsert");
+        k.style.display="none";
+        
+        
+        var a1=document.getElementById("airplanedelete");
+        a1.style.display="none";
+        var b1=document.getElementById("routedelete");
+        b1.style.display="none";
+        var c1=document.getElementById("passengerdelete");
+        c1.style.display="none";
+        var d1=document.getElementById("receptionistdelete");
+        d1.style.display="none";
+        var e1=document.getElementById("bookingdelete");
+        e1.style.display="none";
+        var f1=document.getElementById("pilotdelete");
+        f1.style.display="none";
+        var g1=document.getElementById("foodsupplydelete");
+        g1.style.display="none";
+        var h1=document.getElementById("citydelete");
+        h1.style.display="none";
+        var i1=document.getElementById("flightattendantdelete");
+        i1.style.display="none";
+        var j1=document.getElementById("flightschooldelete");
+        j1.style.display="none";
+        var k1=document.getElementById("drivenbydelete");
+        k1.style.display="none";
+        
+        
+        var a2=document.getElementById("airplaneupdate");
+        a2.style.display="none";
+        var b2=document.getElementById("routeupdate");
+        b2.style.display="none";
+        var c2=document.getElementById("passengerupdate");
+        c2.style.display="none";
+        var d2=document.getElementById("receptionistupdate");
+        d2.style.display="none";
+        var e2=document.getElementById("bookingupdate");
+        e2.style.display="none";
+        var f2=document.getElementById("pilotupdate");
+        f2.style.display="none";
+        var g2=document.getElementById("foodsupplyupdate");
+        g2.style.display="none";
+        var h2=document.getElementById("cityupdate");
+        h2.style.display="none";
+        var i2=document.getElementById("flightattendantupdate");
+        i2.style.display="none";
+        var j2=document.getElementById("flightschoolupdate");
+        j2.style.display="none";
+        var k2=document.getElementById("drivenbyupdate");
+        k2.style.display="none";
+        
+        var a3=document.getElementById("airplaneshow");
+        var b3=document.getElementById("routeshow");
+        var c3=document.getElementById("passengershow");
+        var d3=document.getElementById("receptionistshow");
+        var e3=document.getElementById("bookingshow");
+        var f3=document.getElementById("pilotshow");
+        var g3=document.getElementById("foodsupplyshow");
+        var h3=document.getElementById("cityshow");
+        var i3=document.getElementById("flightattendantshow");
+        var j3=document.getElementById("flightschoolshow");
+        var k3=document.getElementById("drivenbyshow");
+        var l3=document.getElementById("cancelhistshow");
+        
+    function insert(){
+       a.style.display="none";
+       b.style.display="none";
+       c.style.display="none";
+       d.style.display="none";
+       e.style.display="none";
+       f.style.display="none";
+       g.style.display="none";
+       h.style.display="none";
+       i.style.display="none";
+       j.style.display="none";
+       k.style.display="none";
+       
+       a1.style.display="none";
+       b1.style.display="none";
+       c1.style.display="none";
+       d1.style.display="none";
+       e1.style.display="none";
+       f1.style.display="none";
+       g1.style.display="none";
+       h1.style.display="none";
+       i1.style.display="none";
+       j1.style.display="none";
+       k1.style.display="none";
+       
+       a2.style.display="none";
+       b2.style.display="none";
+       c2.style.display="none";
+       d2.style.display="none";
+       e2.style.display="none";
+       f2.style.display="none";
+       g2.style.display="none";
+       h2.style.display="none";
+       i2.style.display="none";
+       j2.style.display="none";
+       k2.style.display="none";
+       
+       
+       
+            if(document.getElementById("id1").checked){
+                a.style.display="block";
+            }
+            if(document.getElementById("id2").checked){
+                b.style.display="block";
+            }
+            if(document.getElementById("id3").checked){
+                c.style.display="block";
+            }
+            if(document.getElementById("id4").checked){
+                d.style.display="block";
+            }
+            if(document.getElementById("id5").checked){
+                e.style.display="block";
+            }
+            if(document.getElementById("id6").checked){
+                f.style.display="block";
+            }
+            if(document.getElementById("id7").checked){
+                g.style.display="block";
+            }
+            if(document.getElementById("id8").checked){
+                h.style.display="block";
+            }
+            if(document.getElementById("id9").checked){
+                i.style.display="block";
+            }
+            if(document.getElementById("id10").checked){
+                j.style.display="block";
+            }
+            if(document.getElementById("id11").checked){
+                k.style.display="block";
+            }   
+        }
+        
+        function deletee(){
+       a.style.display="none";
+       b.style.display="none";
+       c.style.display="none";
+       d.style.display="none";
+       e.style.display="none";
+       f.style.display="none";
+       g.style.display="none";
+       h.style.display="none";
+       i.style.display="none";
+       j.style.display="none";
+       k.style.display="none";     
+            
+       a1.style.display="none";
+       b1.style.display="none";
+       c1.style.display="none";
+       d1.style.display="none";
+       e1.style.display="none";
+       f1.style.display="none";
+       g1.style.display="none";
+       h1.style.display="none";
+       i1.style.display="none";
+       j1.style.display="none";
+       k1.style.display="none";
+       
+       a2.style.display="none";
+       b2.style.display="none";
+       c2.style.display="none";
+       d2.style.display="none";
+       e2.style.display="none";
+       f2.style.display="none";
+       g2.style.display="none";
+       h2.style.display="none";
+       i2.style.display="none";
+       j2.style.display="none";
+       k2.style.display="none";
+       
+       if(document.getElementById("id1a").checked){
+                a1.style.display="block";
+            }
+            if(document.getElementById("id2a").checked){
+                b1.style.display="block";
+            }
+            if(document.getElementById("id3a").checked){
+                c1.style.display="block";
+            }
+            if(document.getElementById("id4a").checked){
+                d1.style.display="block";
+            }
+            if(document.getElementById("id5a").checked){
+                e1.style.display="block";
+            }
+            if(document.getElementById("id6a").checked){
+                f1.style.display="block";
+            }
+            if(document.getElementById("id7a").checked){
+                g1.style.display="block";
+            }
+            if(document.getElementById("id8a").checked){
+                h1.style.display="block";
+            }
+            if(document.getElementById("id9a").checked){
+                i1.style.display="block";
+            }
+            if(document.getElementById("id10a").checked){
+                j1.style.display="block";
+            }
+            if(document.getElementById("id11a").checked){
+                k1.style.display="block";
+            }
+       
+        }
+        
+        function update(){
+       a.style.display="none";
+       b.style.display="none";
+       c.style.display="none";
+       d.style.display="none";
+       e.style.display="none";
+       f.style.display="none";
+       g.style.display="none";
+       h.style.display="none";
+       i.style.display="none";
+       j.style.display="none";
+       k.style.display="none";     
+            
+       a1.style.display="none";
+       b1.style.display="none";
+       c1.style.display="none";
+       d1.style.display="none";
+       e1.style.display="none";
+       f1.style.display="none";
+       g1.style.display="none";
+       h1.style.display="none";
+       i1.style.display="none";
+       j1.style.display="none";
+       k1.style.display="none";     
+            
+       a2.style.display="none";
+       b2.style.display="none";
+       c2.style.display="none";
+       d2.style.display="none";
+       e2.style.display="none";
+       f2.style.display="none";
+       g2.style.display="none";
+       h2.style.display="none";
+       i2.style.display="none";
+       j2.style.display="none";
+       k2.style.display="none"; 
+       
+       if(document.getElementById("id1b").checked){
+                a2.style.display="block";
+            }
+            if(document.getElementById("id2b").checked){
+                b2.style.display="block";
+            }
+            if(document.getElementById("id3b").checked){
+                c2.style.display="block";
+            }
+            if(document.getElementById("id4b").checked){
+                d2.style.display="block";
+            }
+            if(document.getElementById("id5b").checked){
+                e2.style.display="block";
+            }
+            if(document.getElementById("id6b").checked){
+                f2.style.display="block";
+            }
+            if(document.getElementById("id7b").checked){
+                g2.style.display="block";
+            }
+            if(document.getElementById("id8b").checked){
+                h2.style.display="block";
+            }
+            if(document.getElementById("id9b").checked){
+                i2.style.display="block";
+            }
+            if(document.getElementById("id10b").checked){
+                j2.style.display="block";
+            }
+            if(document.getElementById("id11b").checked){
+                k2.style.display="block";
+            }
+        }
+        
+        function show(){
+        if(document.getElementById("id1c").checked){
+                a3.submit();
+            }
+            if(document.getElementById("id2c").checked){
+                b3.submit();
+            }
+            if(document.getElementById("id3c").checked){
+                c3.submit();
+            }
+            if(document.getElementById("id4c").checked){
+                d3.submit();
+            }
+            if(document.getElementById("id5c").checked){
+                e3.submit();
+            }
+            if(document.getElementById("id6c").checked){
+                f3.submit();
+            }
+            if(document.getElementById("id7c").checked){
+                g3.submit();
+            }
+            if(document.getElementById("id8c").checked){
+                h3.submit();
+            }
+            if(document.getElementById("id9c").checked){
+                i3.submit();
+            }
+            if(document.getElementById("id10c").checked){
+                j3.submit();
+            }
+            if(document.getElementById("id11c").checked){
+                k3.submit();
+            } 
+            if(document.getElementById("id12c").checked){
+                l3.submit();
+            }
+        }
+      
+
+        
+    </script>
+</body></html>
+
